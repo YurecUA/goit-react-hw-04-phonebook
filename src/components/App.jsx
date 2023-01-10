@@ -70,7 +70,7 @@ export const App = () => {
         <div className={styles.allContacts}>All contacts: {contacts.length}</div>
         <Filter value={filter} onChange={changeFilter} />
         <ContactList
-          contacts={getVisibleContacts}
+          contacts={getVisibleContacts()}
           onDeleteContact={deleteContact}
         />
       </div>
